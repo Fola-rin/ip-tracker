@@ -1,0 +1,87 @@
+.App {
+	text-align: center;
+	height: 100vh;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+.top-div {
+	background-image: url("./assets/pattern-bg.png");
+	padding: 30px 30px 80px;
+	position: relative;
+	box-shadow: 1px 4px 6px 2px rgb(189 189 189 / 41%);
+	box-sizing: border-box;
+	height: 30vh;
+}
+
+.top-div .page-main-title {
+	color: #fff;
+}
+.my-map-container {
+	height: 65vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer {
+	position: fixed;
+	width: 100%;
+	height: 5vh;
+	background-image: url("./assets/pattern-bg.png");
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+@media screen and (max-width: 425px) {
+	.top-div {
+		padding: 30px;
+		height: 27vh;
+	}
+	.my-map-container {
+		height: 70vh;
+	}
+	footer {
+		font-size: 13px;
+		height: 3vh;
+	}
+	.top-div .page-main-title {
+		font-size: 21px;
+	}
+}
+@media screen and (max-width: 375px) {
+	.top-div {
+		padding: 25px 20px;
+	}
+}
+@media screen and (max-width: 320px) {
+	.top-div {
+		padding: 25px 10px;
+	}
+}
