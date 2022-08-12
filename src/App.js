@@ -18,7 +18,7 @@ function App() {
 	// console.log(data);
 
 	useEffect(() => {
-		// dispatch(fetchData());
+		dispatch(fetchData("156.33.241.5"));
 	}, []);
 	const [center, setCenter] = useState([51.505, -0.09]);
 

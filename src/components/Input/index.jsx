@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { fetchData } from "../../redux/actions";
 
@@ -7,7 +7,9 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
 const MyInput = () => {
 	const [ip, setIp] = useState("");
+
 	const dispatch = useDispatch();
+
 	return (
 		<div className="input-container">
 			<input
